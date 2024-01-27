@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BinToDec</title>
+    <!--cdn link for bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script src="./app.js"></script>
+  </head>
+  <!--
+Hello, I'am Mustafa Cenan. I made this website for learning algorithms,
+ bootstrap and js. This is not perfectly done bot at least it works.
+ Thanks a lot for downloading.
+-->
+
+  <body class="bg-success-subtle">
+    <!--site header-->
+    <div class="row p-3 bg-success">
+      <div class="col-12 text-center m-3">
+        <p class="h3 text-light">Binary to Decimal Converter</p>
+      </div>
+    </div>
+    <!--input and button are at the same row-->
+
+    <div class="row">
+      <div class="col-sm-0 col-lg-2 col-xl-3"></div>
+      <div class="col-sm-12 col-lg-8 col-xl-6">
+        <div class="row border border-3 border-dark py-5 m-3">
+          <div class="row p-5">
+            <div class="col-9">
+              <input
+                type="text"
+                id="binaryInput"
+                maxlength="8"
+                placeholder="Enter binary number (e.g., 10101010)"
+                class="input-group d-flex h5 border border-success-subtle border-3 mt-1 text-center"
+              />
+            </div>
+            <div class="col-1"></div>
+            <div class="col-2">
+              <button
+                type="button"
+                class="btn btn-outline-success bg-gradient"
+                id="Convert"
+                onclick="convertToDecimal()"
+              >
+                Convert
+              </button>
+            </div>
+          </div>
+
+          <!--the area for decimal answer-->
+          <div class="row">
+            <div class="col-3"></div>
+            <div
+              class="col-6 border border-2 border-dark text-center p-3 rounded-3"
+            >
+              <p class="h3" id="decimal">0</p>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-0 col-lg-2 col-xl-3"></div>
+    </div>
+
+    <!--fixed footer-->
+    <footer class="fixed-bottom text-center bg-dark bg-gradient">
+      <p class="h5 my-3 text-light">Made by Mustafa Cenan</p>
+    </footer>
+  </body>
+</html>
